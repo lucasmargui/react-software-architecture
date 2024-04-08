@@ -2,6 +2,7 @@
 
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/27954493-7dd7-4eda-9e21-1b46761f420b)
 
+
 - Importing Necessary Functions: The code imports createSlice and configureStore from the @reduxjs/toolkit package. These are used to create Redux slices and configure the Redux store, respectively.
 
 - Creating a Slice: The createSlice function is used to define a Redux slice. A slice in Redux is a portion of the state and the corresponding logic for updating that state. In this case, a slice named 'counter' is created with an initial state object { value: 0 } and two reducers: incremented and decremented.
@@ -16,3 +17,52 @@
 
 - Console Output: As actions are dispatched, the console outputs the current state of the store after each action is processed.
 
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/3b167ee2-d53d-419f-96c9-ba0ecd98c72f)
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/89712024-c1ed-4fc9-a327-4570a9dc845e)
+
+
+```
+CreateNoopStorage function:
+```
+
+This function creates a storage object that mimics the behavior of a storage mechanism like localStorage but doesn't actually store any data.
+  
+It has methods like getItem, setItem, and removeItem, all of which return promises resolving to null, the value passed to setItem, and undefined, respectively.
+
+```
+Conditional Assignment of storage:
+```
+
+It checks if the window object is defined. If it is, it calls createWebStorage("local"), presumably to create a local storage mechanism. Otherwise, it falls back to the createNoopStorage function.
+
+```
+authPersistConfig:
+```
+
+This object defines configuration options for persisting Redux state. It specifies a key for the state in the storage, the storage mechanism to use (either localStorage or the noop storage), and an array of items to whitelist for persistence (in this case, just "authState").
+
+```
+persistedReducer:
+```
+
+This is a Redux reducer enhanced by the redux-persist library. It takes authPersistConfig as a parameter and wraps around the authReducer, ensuring that the state managed by authReducer is persisted according to the configuration provided.
+
+```
+rootReducer:
+```
+
+This is the combined reducer for the Redux store. It combines the auth reducer with any other reducers that might be added in the future.
+
+```
+Redux Store Configuration:
+```
+
+The Redux store is configured using configureStore, where the rootReducer is provided as the reducer. Additionally, custom middleware is applied to handle serialization checks, with serializableCheck set to false to disable serializability checks.
+
+```
+Exporting Types and Hooks:
+```
+
+- It exports RootState and AppDispatch types, which are derived from the store's state and dispatch types, respectively.
+- It exports two custom hooks useAppDispatch and useAppSelector using React-Redux's useDispatch and useSelector hooks but with types specifically tailored to the store's dispatch and state.

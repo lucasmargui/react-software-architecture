@@ -4,6 +4,9 @@
 
 Break code into smaller chunks and load them on demand as needed.
 
+ <details>
+  <summary>Click to show content</summary>
+
 -	api/: folder to store server files and API routes. 
 -	components/: folder to store React components that are shared across multiple pages. 
 -	domains/: Folder to store domain-related files, such as data models and business logic. 
@@ -16,17 +19,32 @@ Break code into smaller chunks and load them on demand as needed.
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/68de3d83-32d7-4811-b008-75a07bbf1318)
 
 
-
+  </details>
+  
 ## Atomic Design 
 
+Atomic design is a methodology for creating design systems that emphasizes building user interfaces in a hierarchical and modular manner. It was developed by Brad Frost as a way to address the challenges of designing and maintaining large-scale digital products. The term "atomic" refers to the idea of breaking down interface components into their smallest, most basic elements, much like the building blocks of matter in chemistry.
+
+<details>
+<summary>Click to show content</summary>
+   
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/515dd201-5de6-43c6-8700-ead7f8b10655)
 
-Atomic design is a methodology for creating design systems that emphasizes building user interfaces in a hierarchical and modular manner. It was developed by Brad Frost as a way to address the challenges of designing and maintaining large-scale digital products. The term "atomic" refers to the idea of breaking down interface components into their smallest, most basic elements, much like the building blocks of matter in chemistry.
+</details>
+
+
+
+
 
 
 ## MVC 
 
 MVC, which stands for Model-View-Controller, is a software architectural pattern commonly used in the development of user interfaces, particularly for web applications. It divides an application into three interconnected components:
+
+
+
+<details>
+<summary>Click to show content</summary>
 
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/3a3fad2d-50e9-4fab-9acd-abd14f056932)
 
@@ -44,7 +62,7 @@ Controller: The controller acts as an intermediary between the model and the vie
 
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/66739207-f83d-4445-916d-df480013f64c)
 
-
+</details>
 
 
 
@@ -52,6 +70,9 @@ Controller: The controller acts as an intermediary between the model and the vie
 ## Redux
 
 Redux is a JS library for predictable and maintainable global state management.
+
+<details>
+<summary>Click to show content</summary>
 
 ### Redux + Next.js: Example.
 
@@ -128,4 +149,6 @@ Exporting Types and Hooks:
 ### Accessing store across multiple children
 
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/426d267a-77a0-4611-a032-324610303099)
+
+</details>
 

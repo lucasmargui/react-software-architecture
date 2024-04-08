@@ -1,3 +1,54 @@
+
+
+## Code Splitting
+
+Break code into smaller chunks and load them on demand as needed.
+
+-	api/: folder to store server files and API routes. 
+-	components/: folder to store React components that are shared across multiple pages. 
+-	domains/: Folder to store domain-related files, such as data models and business logic. 
+-	interfaces/: folder to store types and interfaces. 
+-	middlewares/: folder to store middleware, such as authentication or authorization. 
+-	pages/: folder to store Next.js page files. 
+-	services/: folder to store service files, which handle communication with the server and data management. 
+-	utils/: folder to store utility functions and third-party libraries.
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/68de3d83-32d7-4811-b008-75a07bbf1318)
+
+
+
+## Atomic Design 
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/515dd201-5de6-43c6-8700-ead7f8b10655)
+
+Atomic design is a methodology for creating design systems that emphasizes building user interfaces in a hierarchical and modular manner. It was developed by Brad Frost as a way to address the challenges of designing and maintaining large-scale digital products. The term "atomic" refers to the idea of breaking down interface components into their smallest, most basic elements, much like the building blocks of matter in chemistry.
+
+
+## MVC 
+
+MVC, which stands for Model-View-Controller, is a software architectural pattern commonly used in the development of user interfaces, particularly for web applications. It divides an application into three interconnected components:
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/3a3fad2d-50e9-4fab-9acd-abd14f056932)
+
+Model: This component represents the data and the business logic of the application. It encapsulates the data and provides methods to access and manipulate that data. The model notifies the view of any changes in the data so that the view can update accordingly. In essence, the model is the backbone of the application, managing the data and its behavior.
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/1819e33e-59c7-41f1-b70f-3d220ae16a49)
+
+
+View: The view is responsible for presenting the data to the user in a particular format, often as a graphical user interface (GUI). It displays information from the model to the user and forwards user input to the controller. Views are usually passive components, meaning they don't directly interact with the data or perform any business logic; instead, they rely on the controller to handle user actions and update the model as necessary.
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/e7a4b28b-b394-40ad-aae5-017224c30272)
+
+
+Controller: The controller acts as an intermediary between the model and the view. It receives user input from the view, processes it (e.g., performs validation or initiates actions), and updates the model accordingly. It also listens for changes in the model and updates the view to reflect those changes. Essentially, the controller controls the flow of the application, orchestrating interactions between the user, the model, and the view.
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/66739207-f83d-4445-916d-df480013f64c)
+
+
+
+
+
+
 ## Redux
 
 Redux is a JS library for predictable and maintainable global state management.

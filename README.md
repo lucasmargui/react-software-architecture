@@ -1,4 +1,8 @@
-# Redux
+## Redux
+
+Redux is a JS library for predictable and maintainable global state management.
+
+### Redux + Next.js: Example.
 
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/27954493-7dd7-4eda-9e21-1b46761f420b)
 
@@ -16,6 +20,9 @@
 - Dispatching Actions: Actions are dispatched to the store using store.dispatch(). Since the actions were exported from the slice, they are directly accessible. First, incremented() is dispatched twice, which increments the value in the state by 1 each time. Then, decremented() is dispatched once, which decrements the value by 1.
 
 - Console Output: As actions are dispatched, the console outputs the current state of the store after each action is processed.
+
+
+### Using redux in a login simulation
 
 ![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/3b167ee2-d53d-419f-96c9-ba0ecd98c72f)
 
@@ -66,3 +73,8 @@ Exporting Types and Hooks:
 
 - It exports RootState and AppDispatch types, which are derived from the store's state and dispatch types, respectively.
 - It exports two custom hooks useAppDispatch and useAppSelector using React-Redux's useDispatch and useSelector hooks but with types specifically tailored to the store's dispatch and state.
+
+### Accessing store across multiple children
+
+![image](https://github.com/lucasmargui/React_Software_Architecture/assets/157809964/426d267a-77a0-4611-a032-324610303099)
+
